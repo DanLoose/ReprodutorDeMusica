@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+}
+
+.containerLista{
+    text-align: left;
+    border: 1px solid rgba(128, 128, 128, 0.295);
+    overflow: auto;
+    max-height: 100px;
+    padding: 0 15px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.controles{
+   overflow: auto;
+;
+}
+
+.ctr{
+    box-sizing: border-box;
+    width: 20%;
+    padding: 15px;
+    float: left;
+    background-color: gray;
+}
+
+.m-bot-20{
+    margin-bottom: 20px;
+}
