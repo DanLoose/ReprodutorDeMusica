@@ -72,3 +72,8 @@ img:hover{
     background-color: rgb(0, 0, 0);
     border-radius: 50px;
 }
+
+#progressBar:hover{
+    box-shadow: 0px 0px 2px rgb(3, 53, 34);
+}
+

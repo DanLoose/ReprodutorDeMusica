@@ -18,6 +18,7 @@ function pause(){
     pauseButton.style.display = 'none';
 }
 
-function addMusic(){
-    
-}
+setInterval(function(){
+    let position = (audio.currentTime/audio.duration) * 100;
+    document.getElementById("progressBarDark").style.width = position + "%";
+}, 15);
