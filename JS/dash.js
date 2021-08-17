@@ -37,16 +37,26 @@ function changeMusic(audio){
 }
 
 // Play & Pause
+
 function playMusic(){
-    audioControl.play();
-    document.getElementById("play").style.display = "none";
-    document.getElementById("pause").style.display = "block";
+    let play = document.getElementById("play").style;
+    let pause = document.getElementById("pause").style;
+
+    if(audioControl != document.getElementById("audioControl")){
+        audioControl.play();
+        play.display = "none";
+        pause.display = "block";
+    }
+    
 }
 
 function pauseMusic(){
+    let play = document.getElementById("play").style;
+    let pause = document.getElementById("pause").style;
+
     audioControl.pause();
-    document.getElementById("play").style.display = "block";
-    document.getElementById("pause").style.display = "none";
+    play.display = "block";
+    pause.display = "none";
 }
 
 
