@@ -1,8 +1,7 @@
 let playButton = document.getElementById("play");
 let pauseButton = document.getElementById("pause");
 let audio = document.getElementById("audio");
-let progressBar = document.getElementById("progressBarDark");
-
+let minhasMusicas = [];
 
 playButton.addEventListener("click", start);
 pauseButton.addEventListener("click", pause);
@@ -19,3 +18,6 @@ function pause(){
     pauseButton.style.display = 'none';
 }
 
+function addMusic(){
+    
+}
