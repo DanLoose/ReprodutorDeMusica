@@ -11,10 +11,12 @@ li{
     text-decoration: none;
 }
 
-.container{
-    width: 100%;
-}
+/* ----------- CONTAINER ----------- */
+.container{ width: 100%;}
 
+/* ---------------------------- */
+/* ---------------------------- */
+/* ----------- MENU ----------- */
 .menu, .list, .currentPlaylist{
     width: 20%;
     background-color: black;
@@ -24,24 +26,26 @@ li{
     padding: 20px;
     box-sizing: border-box;
 }
-
 .menu h3, .list h3, .currentPlaylist h3{
     text-align: center;
     margin-bottom: 30px;
 } 
+.menuList li{
+    padding: 10px;
+    list-style-type: none;
+}
+.menuList li:hover{
+    color: #1ABC9C;
+}
 
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ----------- LISTA ABERTA -----------  */
 .currentPlaylist{
     width: 60%;
     background-color: rgb(18, 18, 26);
     padding: 40px;
 }
-
-
-.currentPlaylist li:hover{
-    background-color: rgb(15, 15, 15);
-}
-
-
 .music-container{
     padding: 20px;
     box-sizing: border-box;
@@ -53,26 +57,14 @@ li{
 }
 .music-container > .pontos{text-align: right; font-size: 20px;}
 
-.menuList li{
-    padding: 10px;
-    list-style-type: none;
-}
-.menuList li:hover{
-    color: #1ABC9C;
+.currentPlaylist li:hover{
+    background-color: rgb(15, 15, 15);
 }
 
-#rock{display: none;}
-#funk{display: none;}
-#eletronica{display: block;}
 
-#buttonFunk, #buttonRock{
-    text-decoration:line-through;
-}
-#buttonEletronica{
-    color:#1ABC9C ;
-}
-
-/*  MEDIA CONTROLER CONTAINER  */
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* ----------- MEDIA CONTROLER ----------- */
 .mediaControler-container{
     position: fixed;
     bottom: 0;
@@ -81,7 +73,7 @@ li{
     background-color: rgb(0, 35, 36);
 }
 
-.currentMusic, .musicControlers, .volume{
+.artista, .musicControlers, .volume{
     width: 33.3333%;
     box-sizing: border-box;
     float: left;
@@ -92,12 +84,21 @@ li{
     overflow: auto;
 }
 
-#pause , #aleatorioAtivado, #repetirAtivado{
-    display: none;
-}
-
 .ctr{
     float: left;
     margin-left: 50px;
     margin-top: 20px;
 }
+
+
+/* CONTROLE DE DISPLAY */
+#pause {display: none;}
+#aleatorioAtivado{display: none;}
+#repetirAtivado{display: none;}
+#rock{display: none;}
+#funk{display: none;}
+#eletronica{display: block;}
+
+/* TEMPORARIO */
+#buttonFunk, #buttonRock{text-decoration:line-through;}
+#buttonEletronica{color:#1ABC9C ;}
