@@ -29,17 +29,17 @@
                     <li onclick="selectMusic(this)" class="music-container">
                         <div class="ms">Casual Chic</div>
                         <div class="pontos">°°°</div>
-                        <audio src="./Assets/Ava Low - Casual Chic.mp3"></audio>
+                        <audio src=""></audio>
                     </li>
                     <li onclick="selectMusic(this)" class="music-container">
                         <div class="ms">Casual Chic</div>
                         <div class="pontos">°°°</div>
-                        <audio src="./Assets/Ava Low - Casual Chic.mp3"></audio>
+                        <audio src=""></audio>
                     </li>
                     <li onclick="selectMusic(this)" class="music-container">
                         <div class="ms">Casual Chic</div>
                         <div class="pontos">°°°</div>
-                        <audio src="./Assets/Ava Low - Casual Chic.mp3"></audio>
+                        <audio src=""></audio>
                     </li>
                 </u>
             </div>
@@ -50,17 +50,17 @@
                     <li onclick="selectMusic(this)" class="music-container">
                         <div class="ms">Casual Chic</div>
                         <div class="pontos">°°°</div>
-                        <audio src="./Assets/Ava Low - Casual Chic.mp3"></audio>
+                        <audio src=""></audio>
                     </li>
                     <li onclick="selectMusic(this)" class="music-container">
                         <div class="ms">Casual Chic</div>
                         <div class="pontos">°°°</div>
-                        <audio src="./Assets/Ava Low - Casual Chic.mp3"></audio>
+                        <audio src=""></audio>
                     </li>
                     <li onclick="selectMusic(this)" class="music-container">
                         <div class="ms">Casual Chic</div>
                         <div class="pontos">°°°</div>
-                        <audio src="./Assets/Ava Low - Casual Chic.mp3"></audio>
+                        <audio src=""></audio>
                     </li>
                 </u>
             </div>
@@ -69,19 +69,24 @@
                 <h3>Playlist de Eletrônica</h3>
                 <u>
                     <li onclick="selectMusic(this)" class="music-container">
-                        <div class="ms">Casual Chic</div>
+                        <div class="ms">1. Casual Chic</div>
                         <div class="pontos">°°°</div>
-                        <audio src="./Assets/Ava Low - Casual Chic.mp3"></audio>
+                        <audio src="./Assets/musics/Ava Low - Casual Chic.mp3"></audio>
                     </li>
                     <li onclick="selectMusic(this)" class="music-container">
-                        <div class="ms">Casual Chic</div>
+                        <div class="ms">2. Go Fuck Yourself</div>
                         <div class="pontos">°°°</div>
-                        <audio src="./Assets/Ava Low - Casual Chic.mp3"></audio>
+                        <audio src="./Assets/musics/Two Feet - Go Fuck Yourself (Official Video).mp3"></audio>
                     </li>
                     <li onclick="selectMusic(this)" class="music-container">
-                        <div class="ms">Casual Chic</div>
+                        <div class="ms">3. I Feel Like I'm Drowning</div>
                         <div class="pontos">°°°</div>
-                        <audio src="./Assets/Ava Low - Casual Chic.mp3"></audio>
+                        <audio src="./Assets/musics/Two Feet - I Feel Like I'm Drowning.mp3"></audio>
+                    </li>
+                    <li onclick="selectMusic(this)" class="music-container">
+                        <div class="ms">4. Love Is A Bitch</div>
+                        <div class="pontos">°°°</div>
+                        <audio src="./Assets/musics/Two Feet - Love Is A Bitch.mp3"></audio>
                     </li>
                 </u>
             </div>
@@ -91,17 +96,32 @@
         </div>
 
         <!-- DIREITA -- MUSICAS NA FILA -- LIST -->
-        <div class="list"> <h3>Músicas na fila</h3></div>
+        <div class="list"> 
+            <h3>Músicas na fila</h3>
+            <p>falta implementar</p>
+        </div>
 
 
         <!-- BAIXO -- CONTROLADOR DE MIDIA - MEDIACONTROLER -->
         <div class="mediaControler-container">
-            <div class="currentMusic"></div>
+
+            <div class="currentMusic">Artista - Falta implementar</div>
+
             <div class="musicControlers">
-                <div onclick="playMusic()" id="play">Play</div>
-                <div onclick="pauseMusic()" id="pause">Pause</div>
+
+                <div onclick="setRandom()" id="aleatorio" class="ctr"> <img src="./Assets/icons8-shuffle-50.png" alt="" width="30px"></div>
+                <div onclick="setRandom()" id="aleatorioAtivado" class="ctr"> <img src="./Assets/icons8-shuffle-green-50.png" alt="" width="30px"></div>
+                <div id="voltar" class="ctr"> <img src="./Assets/icons8-rewind-50.png" alt="" width="30px"></div>
+
+                <div onclick="playMusic()" id="play" class="ctr"> <img src="./Assets/icons8-play-50.png" alt="" width="30px"></div>
+                <div onclick="pauseMusic()" id="pause" class="ctr"> <img src="./Assets/icons8-pause-50.png" alt="" width="30px"></div>
+
+                <div id="avançar" class="ctr"> <img src="./Assets/icons8-fast-forward-50.png" alt="" width="30px"></div>
+                <div onclick="setRepeat()" id="repetir" class="ctr"> <img src="./Assets/icons8-repeat-50.png" alt="" width="30px"></div>
+                <div onclick="setRepeat()" id="repetirAtivado" class="ctr"> <img src="./Assets/icons8-repeat-green-50.png" alt="" width="30px"></div>
             </div>
-            <div class="volume"></div>
+
+            <div class="volume">volume - Falta implementar</div>
         </div>
 
         <script src="./JS/dash.js"></script>

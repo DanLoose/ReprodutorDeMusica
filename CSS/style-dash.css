@@ -38,8 +38,9 @@ li{
 
 
 .currentPlaylist li:hover{
-    background-color:rgb(8, 8, 14) ;
+    background-color: rgb(15, 15, 15);
 }
+
 
 .music-container{
     padding: 20px;
@@ -57,13 +58,19 @@ li{
     list-style-type: none;
 }
 .menuList li:hover{
-    font-weight: bold;
+    color: #1ABC9C;
 }
 
 #rock{display: none;}
 #funk{display: none;}
 #eletronica{display: block;}
 
+#buttonFunk, #buttonRock{
+    text-decoration:line-through;
+}
+#buttonEletronica{
+    color:#1ABC9C ;
+}
 
 /*  MEDIA CONTROLER CONTAINER  */
 .mediaControler-container{
@@ -71,13 +78,26 @@ li{
     bottom: 0;
     width: 100%;
     height: 14vh;
-    background-color: firebrick;
-}
-.musicControlers{
-    padding: 10px;
-    background-color: rgb(80, 9, 9);
+    background-color: rgb(0, 35, 36);
 }
 
-#pause{
+.currentMusic, .musicControlers, .volume{
+    width: 33.3333%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.musicControlers{
+    padding: 10px;
+    overflow: auto;
+}
+
+#pause , #aleatorioAtivado, #repetirAtivado{
     display: none;
+}
+
+.ctr{
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
 }
