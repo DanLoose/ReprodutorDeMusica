@@ -99,6 +99,10 @@ li{
 #funk{display: none;}
 #eletronica{display: block;}
 
+/* OUTROS CONTROLES */
+/* .selected{background-color: rgb(0, 35, 36);}
+.unSelected{background-color:rgb(15, 15, 15);} */
+
 /* TEMPORARIO */
 #buttonFunk, #buttonRock{text-decoration:line-through;}
 #buttonEletronica{color:#1ABC9C ;}

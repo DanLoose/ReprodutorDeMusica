@@ -96,10 +96,14 @@ function setRandom(){
     random == true? randomDesativado.style.display = "none" : randomDesativado.style.display = "block";
 }
 
+var selected;
 function selectMusic(e){
 
     let audio = e.children[2];
     changeMusic(audio);
-    
+
+    // selected.classList.toggle("unSelected");
+    // selected = e;
+    // selected.classList.toggle("selected");
 }
 
